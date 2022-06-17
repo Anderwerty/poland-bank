@@ -4,3 +4,18 @@ https://www.baeldung.com/introduction-to-assertj
 
 h2 database
 https://www.h2database.com/html/main.html
+
+
+1. maven
+1.1 dependencies
+1.2 scope dependencies
+1.3 repeat maven phase
+==================
+
+2. Test
+2.1 Test pyramid
+2.2 Spy vs Mock
+2.3 verify
+2.4 unit test vs integration tests
+
+3. h2 database
