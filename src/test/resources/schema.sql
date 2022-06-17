@@ -1,0 +1,5 @@
+CREATE TABLE Accounts (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  iban VARCHAR(250) NOT NULL,
+  amount INT
+);

@@ -1,0 +1,6 @@
+
+Assertj
+https://www.baeldung.com/introduction-to-assertj
+
+h2 database
+https://www.h2database.com/html/main.html
