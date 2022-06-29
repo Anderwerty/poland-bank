@@ -7,6 +7,8 @@ import com.poland.bank.repository.TransactionRepository;
 import com.poland.bank.service.TransactionService;
 import com.poland.bank.service.exception.NotEnoughMoneyException;
 
+import java.util.List;
+
 public class TransactionServiceImpl implements TransactionService {
     private final TransactionRepository transactionRepository;
     private final AccountRepository accountRepository;
@@ -37,5 +39,10 @@ public class TransactionServiceImpl implements TransactionService {
         accountRepository.update(accountFromUpdated);
         accountRepository.update(accountToUpdated);
 
+    }
+
+    @Override
+    public List<Transaction> findAll() {
+        return transactionRepository.findAll();
     }
 }
