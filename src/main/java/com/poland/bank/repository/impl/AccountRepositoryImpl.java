@@ -7,6 +7,7 @@ import com.poland.bank.repository.DBConnector;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Optional;
 
 public class AccountRepositoryImpl extends AbstractCrudRepository<Account> implements AccountRepository {
 
@@ -18,6 +19,12 @@ public class AccountRepositoryImpl extends AbstractCrudRepository<Account> imple
 
     public AccountRepositoryImpl(DBConnector connector) {
         super(connector, SAVE_QUERY, FIND_BY_ID_QUERY, FIND_ALL_QUERY, UPDATE_QUERY, DELETE_BY_ID_QUERY);
+    }
+
+    @Override
+    public Optional<Account> findByIban(String iban) {
+        //should be implemented
+        return Optional.empty();
     }
 
     @Override

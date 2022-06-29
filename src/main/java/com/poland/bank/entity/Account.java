@@ -13,6 +13,12 @@ public class Account {
         this.amount = amount;
     }
 
+    public Account(Account account, int amount) {
+        this.id = account.id;
+        this.ibna = account.ibna;
+        this.amount = amount;
+    }
+
     public Integer getId() {
         return id;
     }

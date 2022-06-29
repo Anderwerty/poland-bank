@@ -15,6 +15,13 @@ public class Transaction {
         this.amount = amount;
     }
 
+    public Transaction( Account accountFrom, Account accountTo, double amount) {
+        this.id = 0;
+        this.accountFrom = accountFrom;
+        this.accountTo = accountTo;
+        this.amount = amount;
+    }
+
     public Integer getId() {
         return id;
     }
